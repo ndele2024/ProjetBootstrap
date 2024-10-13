@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+h2, h3, h4, nav-item, #transition, footer {
+    text-align: center;
+}
+
+/* **************** HEADER ***************** */
+header {
+    background: url(./media/main.jpg) no-repeat 50% 50%;
+    background-size:cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #bd256c;
+    animation: titre 5s ease;
+}
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translateY(350px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* ********************** LETFPART ********************** */
+#leftpart{
+    background-color: #bcf5a9;
+    border-radius: 20px;
+    padding: 25px;
+}
+.elements{
+    padding: 70px 0;
+}
+.elements img{
+    border-radius: 50%;
+    width: 200px;
+}
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.elements .button {
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+
+/* ********************** Right part ********************** */
+#rightpart{
+    background-color: rgb(115, 201, 235);
+    border-radius: 20px;
+    padding: 20px;
+}
+.tips{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+.tips h4 {
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    color: #005900;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tips:hover{
+    transform: scale(1.08);
+    opacity: 0.8;
+    transition:ease-out 0.2s;
+}
+
+/* ***************** Newsletter ****************** */
+#newslater{
+    background: url(./media/newsletter.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+#newslater h4{
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+    font-size: 2em;
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    color: #005900;
+}
+#newslater .input-group{
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #bcf5a9;
+    
+}
